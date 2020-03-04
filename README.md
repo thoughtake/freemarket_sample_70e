@@ -2,7 +2,7 @@
 ## 通知のテストです
 ## 通知のテストです2
 
-##　今日は雨です
+##　今日ははれ
 # README
 
 This README would normally document whatever steps are necessary to get the
