@@ -112,8 +112,8 @@ Things you may want to cover:
 ## comments_table
 |Column|Type|Options|
 |------|----|-------|
-|user_id|string|foreign_key: true|
-|item_id|string|foreign_key: true|
+|user_id||foreign_key: true|
+|item_id||foreign_key: true|
 |comment|text|null: false|
 ### Association
 - belongs_to :user
