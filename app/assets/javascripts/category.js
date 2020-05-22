@@ -86,3 +86,23 @@ $(function(){
     }
   });
 });
+
+
+
+
+
+$(document).ready(function () {
+  var count = $('.show-image').length;
+  if (count > 5) {
+    count = 5;
+  }
+  $('.owl-carousel').owlCarousel({
+    center: true,
+    items: count,
+    loop: true,
+    margin: 5,
+    nav: true,
+    stagePadding: 10,
+  });
+});
+

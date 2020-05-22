@@ -33,13 +33,14 @@
             = @item.name
           .main__content__main__item-box__image
             %ul.main__content__main__item-box__image__images
-              %li.main__content__main__item-box__image__images__image 
-                = image_tag "#{@item.item_images[0].src}",size: "250x250"
-                %ul
+              %li.main__content__main__item-box__image__images__image
+                = image_tag "#{@item.item_images[0].src}",size: "250x250",class: "owl-carousel"
+                %ul.owl-carousel.owl-theme
                   - @item.item_images.each do |item_image|
                     %li
-                      = image_tag "#{item_image.src}",size: "70x70"
-                   
+                      = image_tag "#{item_image.src}",size: "80x900",class: "show-image owl-carousel-sub"
+                .owl-prev
+                .owl-next   
           .main__content__main__item-box__price
             %span.main__content__main__item-box__price-price
               = ('¥' + @item.price.to_s(:delimited))
